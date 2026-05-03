@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadOre | Premium Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="main-bar">
+        <a href="#" class="logo">READORE</a>
+        
+        <form class="search-bar">
+            <input type="search" placeholder="Search 1000+ books by name or author..." id="search-input">
+            <i class="fas fa-search"></i>
+        </form>
+
+        <div class="top-icons">
+            <i class="fas fa-moon" id="theme-toggle" title="Night/Day"></i>
+            <i class="fas fa-language" id="lang-toggle" title="Change Language"></i>
+            <a href="#"><i class="fas fa-shopping-cart"><span class="badge">0</span></i></a>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+    </div>
+    <span id="cart-count">0</span>
+
+    <nav class="nav-bar" id="nav-links">
+        <a href="#home" data-en="Home" data-ur="ہوم">Home</a>
+        <a href="#featured" data-en="Featured" data-ur="نمایاں">Featured</a>
+        <a href="#arrivals" data-en="New Arrivals" data-ur="نئی کتب">New Arrivals</a>
+        <a href="#reviews" data-en="Reviews" data-ur="تبصرے">Reviews</a>
+        <a href="#contact" data-en="Contact" data-ur="رابطہ">Contact</a>
+    </nav>
+</header>
+
+<div class="login-form-container">
+    <i class="fas fa-times" id="close-login" style="position:absolute; top:3rem; right:4rem; font-size:5rem; color:white; cursor:pointer;"></i>
+    <form action="">
+        <h3>Login / Sign Up</h3>
+        <input type="email" placeholder="Email" class="box">
+        <input type="password" placeholder="Password" class="box">
+        <input type="submit" value="Login Now" class="btn" style="width:100%">
+    </form>
+</div>
+
+<section class="home" id="home">
+    <div class="content">
+        <h3 id="hero-title">BIG BOOK SALE</h3>
+        <span id="hero-sub">UP TO 75% OFF</span>
+        <p style="font-size: 2rem; margin: 2rem 0;">Explore the largest digital library of postcolonial and classic literature.</p>
+        <a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper" id="home-slides">
+        </div>
+    </div>
+</section>
+
+<section class="featured" id="featured">
+    <h1 class="heading"> <span>Featured</span> Books </h1>
+    <div class="swiper featured-slider">
+        <div class="swiper-wrapper" id="featured-items">
+           
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</section>
+
+<section class="arrivals" id="arrivals">
+    <h1 class="heading"> <span>New</span> Arrivals </h1>
+    <div class="arrivals-grid" id="all-arrivals">
+    </div>
+</section>
+<section class="reviews" id="reviews">
+    <h1 class="heading"> Client's <span>Reviews</span> </h1>
+    <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="">
+                <h3>John Doe</h3>
+                <p>The collection is vast and the delivery was incredibly fast. Highly recommended for book lovers!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="">
+                <h3>Sara Ahmed</h3>
+                <p>I got a 75% discount on my favorite series. This is the best online bookstore ever!</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="">
+                <h3>Ali Khan</h3>
+                <p>The website is very user-friendly. Managing my reading list has never been easier.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="">
+                <h3>Mary Jane</h3>
+                <p>Quality of books is top-notch. Packing was secure and the customer support is great.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="">
+                <h3>Chris Evan</h3>
+                <p>Amazing experience. I found rare editions here that weren't available anywhere else.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Our Locations</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> India </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Russia </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> France </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Japan </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> Africa </a>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="#home"> <i class="fas fa-arrow-right"></i> Home </a>
+            <a href="#featured"> <i class="fas fa-arrow-right"></i> Featured </a>
+            <a href="#arrivals"> <i class="fas fa-arrow-right"></i> Arrivals </a>
+            <a href="#reviews"> <i class="fas fa-arrow-right"></i> Reviews </a>
+            <a href="#contact"> <i class="fas fa-arrow-right"></i> Contact </a>
+        </div>
+
+        <div class="box">
+            <h3>Extra Links</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Account Info </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Ordered Items </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Privacy Policy </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Payment Method </a>
+            <a href="#"> <i class="fas fa-arrow-right"></i> Our Services </a>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +923-456-7890 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +921-222-3333 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> shahidamna921@gmail.com </a>
+            <img src="https://raw.githubusercontent.com/Krunal-Kanojiya/Book-Store-Website/main/image/worldmap.png" class="map" alt="">
+        </div>
+    </div>
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="credit"> Created By <span>Amna Shahid</span> | All Rights Reserved! </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
